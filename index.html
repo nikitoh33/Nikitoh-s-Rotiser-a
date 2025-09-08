@@ -1,79 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikitoh’s Rotisería</title>
-
+    <title>Pizzeria Nikitoh’s</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <!--MENU-->
 
-<nav class=>
-    <ul class="menu-horizontal">
-        <li><a href="#">Inicio</a></li>
-        <li>
-            <a href="#">Productos</a>
-            <ul class="menu-vertical">
-                <a href="#">Pizzas</a><br>
-                <a href="#">Hamburguesas</a>
-            </ul>
-        </li>
-
-        <li>
-            <a href="#">Nosotros</a>
-            <ul class="menu-vertical">
-                <a href="#">Instagram</a><br>
-                <a href="#">Facebook</a><br>
-                <a href="#">Web</a><br>
-                <a href="#">WhatsApp</a>
-            </ul>
-        </li>
-
-        <li>
-            <a href="#">Contacto</a>
-        </li>
-    </ul>
-</nav>
-
-<div class="inicio">
-    <h1>Nikitoh’s Rotisería</h1>
-</div >
-
-<div class="nosotros">
-    <h1>Roticería Nikitoh´s</h1>
-    <p class="nosotros-txt">Roticería Nikitoh´s nace con el sueño de llevar al mercado argentino la comida que hacemos en casa: preparando todo con dedicación, dejando que los sabores se desarrollen naturalmente y usando ingredientes de calidad, frescos y sin conservantes ni aditivos. Cada plato es elaborado con cuidado y atención a los detalles, para lograr ese sabor único que nos caracteriza.
-En nuestra familia somos amantes de la buena comida. Por eso trabajamos con los mejores productores de nuestro país, gente que comparte nuestra pasión y compromiso por la calidad y por el cuidado del medio ambiente.
-Ofrecemos nuestras comidas listas para llevar, para que puedas disfrutar de platos caseros y frescos en cualquier momento, con la comodidad de tenerlos listos en minutos.
-Con nuestros productos llevamos la pasión y el respeto por lo artesanal a escala más amplia, ofreciendo opciones versátiles, diferenciadas y con personalidad en las góndolas y también para soluciones de gastronomía y hotelería.
-¡De nuestra cocina a tu mesa en un instante!</p>
-    <img src="/Fotos/or-hakim-S2Eql9vHN3o-unsplash.jpg" alt="">
-</div>
-
-<div class="ubicacion">
-    <p>Amor por nuestras pizzas y burgers</p>
-    <p>Amor por nuestros procesos</p>
-    <img src="/Fotos/370860348_11475300.png" alt=""> <!--imagen de fondo despues modificar-->
-</div>
-
-<div class="productos">
-    cosas
-</div>
-
-<div class="delivery">
-    <p>delivery</p>
-    <img src="/Fotos/tonny-huang-CNJAUQFRPps-unsplash.jpg" alt="">
-</div>
-
-<div class="nosotros">
-
-</div>
-
-<div class="formulario">
+     <div class="intro">Pizzeria Nikitoh’s</div>
     
-</div>
+     <header>
+        <nav>
+            <a href="#menu">Menú</a>
+            <a href="#historia">Historia</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#carrito">Carrito (<span id="carrito-cantidad">0</span>)</a>
+        </nav>
+    </header>
 
+    <main>
+        <section id="historia">
+            <h2>Nuestra Historia</h2>
+            <div class="historia-contenido">
+                <p>Todo comenzó en un pequeño barrio donde Nicolás, apodado cariñosamente “Nikitoh” por sus amigos, solía invitar a todos los domingos a compartir pizzas caseras en el patio de su casa. Con un horno improvisado y mucha pasión por la cocina, fue experimentando con masas de larga fermentación, quesos artesanales y combinaciones únicas de ingredientes.</p>
+                <p>Lo que empezó como una reunión familiar se convirtió en una tradición esperada por todo el vecindario. Cada pizza llevaba un toque especial: a veces un ingrediente inesperado, otras veces un detalle pensado para sorprender a quienes se sentaban en la mesa.</p>
+                <p>Con el tiempo, el sueño tomó forma: abrir un local donde cualquiera pudiera sentir ese mismo calor de hogar y disfrutar de una pizza hecha con amor y dedicación. Así nació Pizzería Nikitoh’s, un espacio donde la pasión por la buena comida se mezcla con la amistad y la alegría de compartir.</p>
+                <p>Hoy, Nikitoh’s es mucho más que una pizzería: es un lugar donde cada cliente es parte de la familia, donde cada receta guarda una historia, y donde la tradición sigue viva en cada bocado.</p>
+            </div>
+        </section>
+
+        <section id="delivery">
+            <div class="deliveryinfo">
+                <h2>Delivery</h2>
+                <p>Pedí fácil, rápido y seguro desde nuestra web y recibí tu pedido en minutos</p>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Nuestro Menú</h2>
+            <div class="pizza-container">
+                <!-- **AQUÍ: Inserta las pizzas desde JavaScript** -->
+            </div>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-items">
+                <!-- **AQUÍ: Se mostrarán los ítems del carrito** -->
+            </div>
+            <div id="carrito-total">
+                <strong>Total: $<span id="total">0.00</span></strong>
+                <button id="comprar">Comprar</button>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¡Estamos ansiosos de escucharte! Contáctanos a través de los siguientes medios:</p>
+            <ul>
+                <li>Email: <a href="mailto:info@pizzerianikitohs.com">info@pizzerianikitohs.com</a></li>
+                <li>Teléfono: +261 693 5851</li>
+                <li>Dirección: Calle humahuaca ,rodeo de la cruz</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pizzeria Nikitoh’s</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

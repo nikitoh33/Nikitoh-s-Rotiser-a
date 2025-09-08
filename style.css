@@ -1,103 +1,268 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans';
-}
-
-img{
-    width: 500px;
-    height: 500px;
-}
-
-.inicio{
-    background-image: url(Fotos/pizza1.gif);
-    width: 100%;
-    height: 500px;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 80px;
-    background-attachment: fixed;
-}
-
-.inicio h1{
-    font-family: monospace;
-    font-size: 70px;
-    
-}
-
-body{
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-nav{
-    
-    margin: auto;
-    background-color: white;
-    font-size: 15px;
-    margin-top: 0%;
-    
-}
-
-.menu-horizontal{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    
-    
-}
-
-.menu-horizontal > li > a {
-    display: block;
-    padding: 30px;
-    
-    color: black;
     text-decoration: none;
-    
-    
-}
-
-.menu-horizontal >li:hover{
-    background-color: rgb(255, 254, 254);
-    text-align: center;
-}
-
-.menu-vertical{
-    position: absolute;
-    display: none;
     list-style: none;
-    background-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+
+.intro{
+    background-image: url(ruta/intropizza.jpg);
+    height: 600px;
+    width: 100%;
+    font-size: 90px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: cursive;
+    color: #fff;
+    
+    text-shadow: 2px 2px 2px rgb(255, 0, 0);
+
+    display: flex;              /* activa flexbox */
+    justify-content: center;    /* centra horizontalmente */
+    align-items: center;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    display: flex;
+    
+
+    position: sticky;
+    top: 0px;
+    z-index: 10;
    
 }
 
-.menu-horizontal li:hover .menu-vertical{
-    display: block;
-    text-align: left;
-    
-}
-
-.menu-vertical li:hover{
-    background-color: black;
-    
-}
-
-.menu-vertical a{
-    text-decoration: none;
-    color: black;
-    padding: 20px;
-    margin: 3px;
-}
-
-.menu-vertical li a{
-    display: block;
+nav a {
     color: white;
-    padding: 15px 15px 15px 20px;
     text-decoration: none;
+    margin: 10px 5px;
+    padding: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+#menu {
+    text-align: center;
+}
+
+.pizza-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinea las pizzas al inicio del contenedor */
+}
+
+.pizza-card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pizza-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.pizza-card h3 {
+    margin-top: 0;
+}
+
+.pizza-card p {
+    color: #666;
+}
+
+.pizza-card button {
+    background-color: #e44d26;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrito {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#carrito-items {
+    margin-bottom: 15px;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.carrito-item img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.carrito-item button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#carrito-total {
+    text-align: right;
+}
+
+#comprar {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+
+#historia {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#historia h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e44d26;
+}
+
+.historia-contenido p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+#delivery{
+    color: #fff;
+    background-image: url(ruta/delivery.jpg);
+    background-size: cover;
+
+    height: 600px;
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    text-shadow: 2px 2px 2px rgb(255, 0, 0);
+
+    display: flex;              /* activa flexbox */
+    justify-content: center;    /* centra horizontalmente */
+    align-items: center;   t-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#delivery p{
+    font-size: 30px;
+}
+
+
+#contacto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    margin: 10px;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e44d26;
+}
+
+#contacto p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contacto li {
+    margin-bottom: 10px;
+}
+
+#contacto a {
+    color: #e44d26;
+    text-decoration: none;
+}
+
+#contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+    .pizza-card {
+        width: 100%;
+    }
+}
+
+/* Estilos Responsive para 430px */
+@media (max-width: 430px) {
+    .pizza-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Alinea las pizzas al inicio del contenedor */
+    }
+
+    .pizza-card {
+        flex-basis: calc(50% - 10px); /* Ancho del 50% con margen */
+        margin: 5px; /* Margen reducido para el espaciado */
+        box-sizing: border-box; /* Incluir padding y border en el cálculo del ancho */
+    }
+
+    nav a {
+    margin: 10px 1px;
     
+}
+
 }
