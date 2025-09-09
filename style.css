@@ -44,6 +44,22 @@ header {
    
 }
 
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* permite varias líneas si es necesario */
+    gap: 5px; /* espacio entre enlaces */
+}
+
+header nav a {
+    padding: 6px 10px;
+    font-size: 14px;
+    white-space: nowrap; /* evita que el contenido se rompa */
+    display: inline-flex; /* hace que “Carrito (0)” se mantenga junto */
+    align-items: center;
+}
+
+
 nav a {
     color: white;
     text-decoration: none;
@@ -237,14 +253,13 @@ footer {
     text-decoration: underline;
 }
 
-/* Estilos Responsive */
+
 @media (max-width: 768px) {
     .pizza-card {
         width: 100%;
     }
 }
 
-/* Estilos Responsive para 430px */
 @media (max-width: 425px) {
     .pizza-container {
         display: flex;
@@ -258,15 +273,18 @@ footer {
         box-sizing: border-box; /* Incluir padding y border en el cálculo del ancho */
     }
 
-    nav {
+    header nav {
         display: flex;
-        flex-wrap: wrap; /* permite que los enlaces no se salgan del contenedor */
         justify-content: center;
+        flex-wrap: nowrap; /* evita que los enlaces se rompan */
+        gap: 5px; /* espacio entre enlaces sin usar margin */
+        overflow-x: auto; /* permite scroll si no entran todos */
     }
 
-    nav a {
-        margin: 3px 2px; /* margen reducido */
-        padding: 8px 5px; /* padding más chico */
-        font-size: 14px; /* opcional: texto más pequeño */
+    header nav a {
+        padding: 6px 8px; /* reduce el relleno interno */
+        font-size: 14px; /* tamaño de texto más pequeño */
+        white-space: nowrap; /* evita que el texto se rompa */
+        flex-shrink: 0; /* evita que se reduzcan demasiado los enlaces */
     }
 }
