@@ -245,7 +245,7 @@ footer {
 }
 
 /* Estilos Responsive para 430px */
-@media (max-width: 430px) {
+@media (max-width: 425px) {
     .pizza-container {
         display: flex;
         flex-wrap: wrap;
@@ -258,9 +258,15 @@ footer {
         box-sizing: border-box; /* Incluir padding y border en el cálculo del ancho */
     }
 
-    nav a {
-    margin: 10px 1px;
-    
-}
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* permite que los enlaces no se salgan del contenedor */
+        justify-content: center;
+    }
 
+    nav a {
+        margin: 3px 2px; /* margen reducido */
+        padding: 8px 5px; /* padding más chico */
+        font-size: 14px; /* opcional: texto más pequeño */
+    }
 }
