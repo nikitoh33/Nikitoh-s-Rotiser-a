@@ -17,7 +17,7 @@ body {
     background-image: url(ruta/intropizza.jpg);
     height: 600px;
     width: 100%;
-    font-size: 90px;
+    font-size: 100px;
     text-align: center;
     background-size: cover;
     background-attachment: fixed;
@@ -30,7 +30,10 @@ body {
     display: flex;              /* activa flexbox */
     justify-content: center;    /* centra horizontalmente */
     align-items: center;
+
+    animation: tam-letra 5s  linear;
 }
+
 
 header {
     background-color: black;
@@ -41,7 +44,6 @@ header {
     position: sticky;
     top: 0px;
     z-index: 10;
-   
 }
 
 header nav {
@@ -58,6 +60,13 @@ header nav a {
     display: inline-flex; /* hace que “Carrito (0)” se mantenga junto */
     align-items: center;
 }
+
+header nav a:hover{
+    border-radius: 15px 0;
+    background-color: #e44d26;
+    transition: background-color 1s linear;
+}
+
 
 
 nav a {
@@ -80,6 +89,8 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
 
 .pizza-card {
     width: 300px;
@@ -175,7 +186,16 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     text-align: center;
+
 }
+
+
+
+
+
+
+
+
 
 #historia h2 {
     text-align: center;

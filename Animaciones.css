@@ -1,0 +1,13 @@
+/*Cambiar de tamaño las letras (intro)*/
+@keyframes tam-letra {
+    0% {
+        font-size: 0px;
+    }
+    
+    100% {
+        font-size: 100px;
+    }
+}
+
+
+/*animacion*/

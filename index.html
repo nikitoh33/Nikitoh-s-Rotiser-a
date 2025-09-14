@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzeria Nikitoh's</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Animaciones.css">
 
 
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
@@ -21,15 +23,15 @@
 
 <body>
 
-     <div class="intro">Pizzeria Nikitoh’s</div>
+    <div class="intro">Pizzeria Nikitoh’s</div>
     
-     <header>
+    <header>
         <nav>
             <a href="#menu">Menú</a>
             <a href="#historia">Historia</a>
             <a href="#contacto">Contacto</a>
             <a href="#carrito" class="menu-carrito">
-         <span class="carrito-text">Carrito (<span id="carrito-cantidad">0</span>)</span></a>
+        <span class="carrito-text">Carrito (<span id="carrito-cantidad">0</span>)</span></a>
         </nav>
     </header>
 
@@ -54,14 +56,15 @@
         <section id="menu">
             <h2>Nuestro Menú</h2>
             <div class="pizza-container">
+                <!-- Aquí se mostrarán las pizzas dinámicamente mediante JavaScript -->
             </div>
         </section>
 
         <section id="carrito">
             <h2>Carrito de Compras</h2>
-            <div id="carrito-items">
-                <!-- **AQUÍ: Se mostrarán los ítems del carrito** -->
-            </div>
+            
+            <div id="carrito-items"></div>
+
             <div id="carrito-total">
                 <strong>Total: $<span id="total">0.00</span></strong>
                 <button id="comprar">Comprar</button>
